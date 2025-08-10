@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor-formulario {
+  border: 1px solid rgb(4, 4, 10);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+form fieldset {
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.titulo {
+  font-size: 22px;
+  font-weight: bold;
+  color: darkblue;
+  text-align: center;
+  border: 1px solid blue;
+  margin-bottom: 20px;
+}
+
+.etiqueta {
+  display: block;
+  margin-top: 15px;
+  color: purple;
+  border: 1px solid violet;
+  font-weight: bold;
+}
+
+.campo-texto {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+small {
+  font-size: 12px;
+  color: #666;
+  border: 1px solid orange;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.boton-enviar {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: lightblue;
+  border: 1px solid navy;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.boton-enviar:hover {
+  transform: scale(1.05);
+}
+
+
+/* ...mantén todo lo anterior y agrega esto al final... */
+
+/* Fondo borroso */
+.fondo-borroso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  display: none;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.modal-contenido {
+  background-color: white;
+  padding: 25px 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.boton-cerrar {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-cerrar:hover {
+  background-color: darkred;
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor-formulario {
+    margin: 30px;
+    }
+}
